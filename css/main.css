@@ -48,7 +48,6 @@ header .container {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  background-color: black;
 }
 header .container::after {
   content: '';
