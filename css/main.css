@@ -39,14 +39,44 @@ body {
   }
 }
 .h-component {
-  width: fit-content;
   margin: 0px auto 100px;
   text-align: center;
+  width: 500px;
+  max-width: 100%;
 }
 .h-component h2 {
   font-weight: normal;
-  font-size: 30px;
+  font-size: 40px;
   position: relative;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.h-component h2::after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: black;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.h-component h2::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -33px;
+  z-index: 1;
+}
+.h-component p {
+  color: var(--p-color);
+  line-height: 2;
 }
 /* End Main Rules */
 
@@ -151,7 +181,7 @@ header .container nav i::after {
 
 /* Start landing */
 .landing {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url('../media/landing.jpg');
   background-size: cover;
@@ -241,4 +271,36 @@ header .container nav i::after {
 /* End landing */
 
 /* Start Services */
+.services {
+  padding: var(--section-padding) 0px;
+}
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px 20px;
+}
+.services .container .serv {
+  display: flex;
+}
+.services .container .serv i {
+  margin-right: 50px;
+}
+@media (max-width: 768px) {
+  .services .container .serv {
+    flex-direction: column;
+    text-align: center;
+  }
+  .services .container .serv i {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+}
+.services .container .serv h3 {
+  color: var(--main-color);
+  margin-bottom: 30px;
+}
+.services .container .serv p {
+  color: var(--p-color);
+  line-height: 2;
+}
 /* End Services */
