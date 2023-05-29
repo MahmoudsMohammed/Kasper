@@ -9,6 +9,7 @@
   --main-color: #19c8fa;
   --transparent-color: rgb(15 116 143 / 70%);
   --section-padding: 100px;
+  --p-color: #777;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -37,7 +38,16 @@ body {
     width: 1170px;
   }
 }
-
+.h-component {
+  width: fit-content;
+  margin: 0px auto 100px;
+  text-align: center;
+}
+.h-component h2 {
+  font-weight: normal;
+  font-size: 30px;
+  position: relative;
+}
 /* End Main Rules */
 
 /* Start Header */
@@ -158,32 +168,32 @@ header .container nav i::after {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.landing i{
+.landing i {
   color: white;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 3;
 }
-.landing .right{
+.landing .right {
   right: 30px;
 }
-.landing .left{
+.landing .left {
   left: 30px;
 }
 @media (max-width: 767px) {
-  .landing i{
+  .landing i {
     display: none;
   }
 }
-.spans{
+.spans {
   position: absolute;
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
 }
-.spans span{
+.spans span {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -191,11 +201,11 @@ header .container nav i::after {
   border-radius: 50%;
   margin-right: 10px;
 }
-.spans span:nth-child(2){
+.spans span:nth-child(2) {
   background-color: var(--main-color);
   border: none;
 }
-.landing .content{
+.landing .content {
   display: flex;
   background-color: var(--transparent-color);
   position: absolute;
@@ -207,25 +217,28 @@ header .container nav i::after {
   color: white;
   padding: 50px;
 }
-.landing .content div:first-child{
+.landing .content div:first-child {
   width: 50%;
 }
 @media (max-width: 767px) {
-  .landing .content{
+  .landing .content {
     width: 100%;
   }
-  .landing .content div:first-child{
+  .landing .content div:first-child {
     width: 0px;
   }
 }
-.landing .content div:last-child{
+.landing .content div:last-child {
   line-height: 2;
 }
-.landing .content div:last-child h2{
+.landing .content div:last-child h2 {
   font-size: 30px;
   font-weight: normal;
 }
-.landing .content div:last-child p{
+.landing .content div:last-child p {
   font-size: 14px;
 }
 /* End landing */
+
+/* Start Services */
+/* End Services */
