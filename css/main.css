@@ -245,7 +245,7 @@ header .container nav i::after {
   transform: translateY(-50%);
   width: 50%;
   color: white;
-  padding: 50px;
+  padding: 40px;
 }
 .landing .content div:first-child {
   width: 50%;
@@ -277,7 +277,7 @@ header .container nav i::after {
 .services .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 40px 20px;
+  gap: 50px 25px;
 }
 .services .container .serv {
   display: flex;
@@ -369,6 +369,82 @@ header .container nav i::after {
 }
 /* End features */
 
-.features + div {
-  padding: var(--section-padding);
+/* Strat portfolio */
+.portfolio {
+  padding: var(--section-padding) 0px;
 }
+.portfolio ul {
+  list-style: none;
+  display: flex;
+  width: fit-content;
+  margin: 0px auto 50px;
+}
+.portfolio ul li {
+  padding: 10px;
+}
+.portfolio ul li:first-of-type {
+  color: white;
+  background-color: var(--main-color);
+}
+.portfolio .p-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio .p-container .box {
+  flex-basis: 25%;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .portfolio .p-container .box {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio .p-container .box {
+    flex-basis: 100%;
+  }
+}
+.portfolio .p-container .box img {
+  max-width: 100%;
+  transition: 0.3s;
+}
+.portfolio .p-container .box .text {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  position: absolute;
+  left: 0px;
+  bottom: -100%;
+  transition: 0.3s;
+}
+.portfolio .p-container .box:hover img {
+  transform: rotate(3deg) scale(1.1);
+}
+.portfolio .p-container .box:hover .text {
+  bottom: 0px;
+}
+.portfolio .p-container .box .text h4 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.portfolio .p-container .box .text p {
+  color: var(--main-color);
+}
+.portfolio a {
+  display: block;
+  width: fit-content;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: var(--main-color);
+  margin: 50px auto 0px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.portfolio a:hover {
+  background-color: white;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+/* End portfolio */
