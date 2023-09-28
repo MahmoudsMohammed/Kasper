@@ -4,6 +4,7 @@
   margin: 0px;
   padding: 0px;
   text-transform: capitalize;
+  background-size: cover;
 }
 :root {
   --main-color: #19c8fa;
@@ -688,3 +689,33 @@ header .container nav i::after {
   }
 }
 /* End skills */
+
+/* Start Quote */
+.quote {
+  padding: var(--section-padding) 0px;
+  background-image: url('../media/quote.jpg');
+  position: relative;
+}
+.quote::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.quote .container {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+.quote .container q {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-transform: lowercase;
+}
+
+/* End Quote */
