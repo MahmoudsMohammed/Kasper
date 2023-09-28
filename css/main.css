@@ -40,6 +40,7 @@ body {
 }
 .h-component {
   margin: 0px auto 100px;
+  padding: 0px 20px;
   text-align: center;
   width: 500px;
   max-width: 100%;
@@ -276,8 +277,12 @@ header .container nav i::after {
 }
 .services .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 50px 25px;
+}
+@media (min-width: 767px) {
+  .services .container {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  }
 }
 .services .container .serv {
   display: flex;
@@ -285,7 +290,7 @@ header .container nav i::after {
 .services .container .serv i {
   margin-right: 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .services .container .serv {
     flex-direction: column;
     text-align: center;
@@ -492,3 +497,23 @@ header .container nav i::after {
   text-transform: uppercase;
 }
 /* End video */
+
+/* Start about */
+.about {
+  padding: var(--section-padding) 20px;
+  overflow: hidden;
+  text-align: center;
+}
+.about img {
+  position: relative;
+  top: 220px;
+  margin-top: -220px;
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .about img {
+    top: 150px;
+    margin-top: -150px;
+  }
+}
+/* End about */
