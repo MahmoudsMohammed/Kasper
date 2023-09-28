@@ -579,3 +579,112 @@ header .container nav i::after {
   margin-bottom: 50px;
 }
 /* End stats */
+
+/* Start skills */
+.skills {
+  padding: var(--section-padding) 0px;
+}
+.skills .text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.skills .text h4 {
+  font-weight: normal;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.skills .text p {
+  line-height: 1.7;
+  color: #777;
+}
+.skills .test .box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.skills .test .box img {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+@media (max-width: 767px) {
+  .skills .test .box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .skills .test .box img {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+}
+.skills .test .box .content {
+  line-height: 1.7;
+  border-bottom: 1px solid #777;
+}
+.skills .test .box .content span {
+  display: block;
+  color: #777;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.skills .test ul {
+  list-style: none;
+  display: flex;
+  width: fit-content;
+  margin: 50px auto;
+}
+.skills .test ul li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #777;
+  margin-right: 5px;
+}
+.skills .test ul li.active {
+  background-color: var(--main-color);
+  border: none;
+}
+.skills .skill .sk {
+  margin-bottom: 40px;
+}
+.skills .skill .sk div {
+  height: 40px;
+  background-color: #c7c7c7;
+  margin-top: 20px;
+}
+.skills .skill .sk div span {
+  display: block;
+  background-color: var(--main-color);
+  height: inherit;
+  position: relative;
+}
+.skills .skill .sk div span::after {
+  content: attr(data);
+  position: absolute;
+  background-color: black;
+  color: white;
+  right: -20px;
+  top: -40px;
+  padding: 5px;
+  border-radius: 4px;
+}
+.skills .skill .sk div span::before {
+  content: '';
+  position: absolute;
+  border: 10px solid transparent;
+  border-top-color: black;
+  right: -8px;
+  top: -12px;
+}
+@media (min-width: 992px) {
+  .skills .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills .container .test,
+  .skills .container .skill {
+    flex-basis: 45%;
+  }
+}
+/* End skills */
