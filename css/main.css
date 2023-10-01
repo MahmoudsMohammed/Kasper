@@ -903,3 +903,64 @@ header .container nav i::after {
   }
 }
 /* End contact */
+
+/* Start info */
+.info{
+  padding: var(--section-padding) 0px;
+}
+.info .container{
+  display: flex;
+}
+@media (max-width : 767px) {
+  .info .container{
+    flex-direction: column;
+  }
+}
+.info .container form {
+  flex-basis: 70%;
+  margin-right: 10%;
+}
+@media (max-width : 767px){
+  .info .container form{
+    margin-right: 0px;
+  }
+}
+.info .container form *:not(:last-child){
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 15px 20px;
+  border: 1px solid #a8a8a8;
+}
+.info .container form textarea{
+  height: 200px;
+}
+.info .container form input:last-child{
+  display: block;
+  margin-left: auto;
+  border: none;
+  padding: 15px 30px;
+  background-color: var(--main-color);
+  color: white;
+  text-transform: uppercase;
+}
+.info .container pre h3{
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.info .container pre p{
+  font-size: 18px;
+  color: #777;
+  line-height: 1.7;
+}
+.info .container pre p:first-of-type{
+  margin-bottom: 30px;
+}
+@media (max-width : 767px){
+  .info .container pre{
+    order: -1;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+/* End info */
