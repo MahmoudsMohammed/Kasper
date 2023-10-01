@@ -7,6 +7,9 @@
   background-size: cover;
   outline: none;
 }
+html{
+  scroll-behavior: smooth;
+}
 :root {
   --main-color: #19c8fa;
   --transparent-color: rgb(15 116 143 / 70%);
@@ -1010,3 +1013,18 @@ footer>p span{
   font-weight: bold;
 }
 /* End footer */
+
+#top{
+  position: fixed;
+  padding: 10px 15px;
+  color: white;
+  background-color: var(--main-color);
+  bottom: 30px;
+  right: 30px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 4;
+}

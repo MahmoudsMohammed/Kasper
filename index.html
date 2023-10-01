@@ -31,11 +31,11 @@
           </div>
           <ul>
             <li><a href="#">home</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">pricing</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#pricing">pricing</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
           <i class="fas fa-search"></i>
         </nav>
@@ -67,7 +67,7 @@
     <!-- End Landing -->
 
     <!-- Start services -->
-    <div class="services">
+    <div class="services" id="services">
       <div class="h-component">
         <h2>services</h2>
         <p>
@@ -140,7 +140,7 @@
     <!-- End Features -->
 
     <!-- Strat portfolio -->
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
       <div class="h-component">
         <h2>PORTFOLIO</h2>
         <p>
@@ -230,7 +230,7 @@
     </div>
     <!-- End video -->
     <!-- Start about -->
-    <div class="about">
+    <div class="about" id="about">
       <div class="h-component">
         <h2>about us</h2>
         <p>
@@ -354,7 +354,7 @@
     </div>
     <!-- End quote -->
     <!-- Start pricing -->
-    <div class="pricing">
+    <div class="pricing" id="pricing">
       <div class="h-component">
         <h2>pricing</h2>
         <p>
@@ -428,7 +428,7 @@
     </div>
     <!-- End contact -->
     <!-- Start info -->
-    <div class="info">
+    <div class="info" id="contact">
       <div class="h-component">
         <h2>contact us</h2>
         <p>
@@ -463,5 +463,11 @@
       <p>&copy; 2023 <span>Kasper</span> all right reserved</p>
     </footer>
     <!-- Strat  -->
+    <button id="top">^</button>
+    <script>
+      top.onclick = (e) => {
+        window.scroll(0,0);
+      };
+    </script>
   </body>
 </html>
