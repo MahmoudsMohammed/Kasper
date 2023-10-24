@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL : [Kasper](https://mahmoudsmohammed.github.io/project_two/)
+- Live Site URL : [Kasper](https://mahmoudsmohammed.github.io/Kasper/)
 
 ## My process
 
